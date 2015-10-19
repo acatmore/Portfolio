@@ -1,0 +1,50 @@
+/* CSS declarations go here */
+body {
+  margin: 0;
+}
+
+header {
+  background: #999;
+  color: white;
+  margin: 0;
+  padding: 5px 15px 0px 10px;
+}
+
+header h1 {
+  margin: 0;
+  display: inline;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  display: inline;
+}
+
+nav ul li {
+  background: black;
+  color: white;
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 10px;
+}
+
+.row {
+  clear: both;
+}
+
+.row:after { 
+  clear: both; 
+  content: " "; 
+  display: table;
+}
+
+.col {
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  padding: .5%;
+  margin: .5%;
+  float: left;
+  width: 31%;
+}
