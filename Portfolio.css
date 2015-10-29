@@ -29,6 +29,11 @@ nav ul li {
   padding: 5px 10px;
 }
 
+/*.container {
+  border-width: 1px;
+  
+}*/
+
 .row {
   clear: both;
 }
@@ -39,12 +44,24 @@ nav ul li {
   display: table;
 }
 
-.col {
+.colMain {
   background: #333;
   color: white;
   border-radius: 5px;
   padding: .5%;
   margin: .5%;
   float: left;
-  width: 31%;
+  width: 63%;
+  height: 600px;
+}
+
+.colDetail {
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  padding: .5%;
+  margin: .5%;
+  float: left;
+  width: 30%;
+  height: 600px;
 }
