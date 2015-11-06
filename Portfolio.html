@@ -11,17 +11,31 @@
 
 <body>
   {{> navigation}}
-  <h1>Alex Atmore's Portfolio</h1>
 
   <div class="row">
+    <div class="colDetail">
+    <h2>Acatmore Tasks is a simple task list</h2>
+      <p>It allows users to classify priority levels and dismiss completed tasks.</p>
+      <p> After a week uncompleted tasks will expire.</p>
+      <p> Working with Meteor for the first time introduced me working with a server.</p>
+    </div>
+
     <div class="colMain">
-      <iframe src="http://acatmoretasks.meteor.com/" width="95%" height="600"> </iframe>
+      <iframe src="http://acatmoretasks.meteor.com/" width="95%" height="380"> </iframe>
 
     </div>
+  </div>
+
+  <div class="row">
+
     <div class="colDetail">
-    <h2>Acatmore Tasks is a simple task list.</h2>
-      <p>It allows users to clasify priority levels and dismiss completed tasks.</p>
-      <p> After a week uncompleted tasks will expire.</p>
+    <h2> Bloc Jams is a music player</h2>
+      <p>It allows users to view and play their music </p>
+      <p>This was the main project of the online bootcamp "Bloc". Through it I was able to learn some basic J-query and AngularJS</p>
+    </div>
+
+    <div class="colMain">
+      <iframe src="https://secure-lowlands-5349.herokuapp.com/" width="95%" height="380"></iframe>
 
     </div>
   </div>
@@ -36,12 +50,14 @@
 
 <template name="navigation">
   <header>
+        <h1>Alex Atmore </h1>
+        <p> Junior Front-end Web Developer and Designer</p>
     <nav>
       <ul>
-        <li><a href="Portfolio.html">Home</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
-        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="page2.html">About</a></li>
+        <li><a href="page3.html">Contact</a></li>
+<!--         <li><a href="page4.html">Page 4</a></li> -->
       </ul>
     </nav>
   </header>

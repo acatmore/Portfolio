@@ -1,13 +1,14 @@
 /* CSS declarations go here */
 body {
   margin: 0;
+  background: #000;
 }
 
 header {
-  background: #999;
-  color: white;
+  background: #0BFFC2;
+  color: #000;
   margin: 0;
-  padding: 5px 15px 0px 10px;
+  padding: 5px 15px 75px 10px;
 }
 
 header h1 {
@@ -16,6 +17,11 @@ header h1 {
   float: right;
 }
 
+header p {
+  margin: 0;
+  display: inline;
+  float: right;
+}
 nav ul {
   margin: 0;
   display: inline;
@@ -36,6 +42,8 @@ nav ul li {
 
 .row {
   clear: both;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .row:after { 
@@ -47,21 +55,21 @@ nav ul li {
 .colMain {
   background: #333;
   color: white;
-  border-radius: 5px;
-  padding: .5%;
-  margin: .5%;
-  float: left;
-  width: 63%;
-  height: 600px;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+  float: right;
+  width: 50%;
+  height: 400px;
 }
 
 .colDetail {
-  background: #333;
-  color: white;
-  border-radius: 5px;
-  padding: .5%;
-  margin: .5%;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
   float: left;
   width: 30%;
-  height: 600px;
+  height: 400px;
 }
