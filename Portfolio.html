@@ -12,12 +12,53 @@
 <body>
   {{> navigation}}
 
-  <div class="row">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+
+<template name="navigation">
+  <header>
+        <h1>Alex Atmore </h1>
+        <p> Junior Front-end Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="/">Portfolio</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+<!--         <li><a href="page4.html">Page 4</a></li> -->
+      </ul>
+    </nav>
+  </header>
+</template>
+
+<template name="portfolio">
+
+    <div class="row">
     <div class="colDetail">
-    <h2>Acatmore Tasks is a simple task list</h2>
-      <p>It allows users to classify priority levels and dismiss completed tasks.</p>
+      <h2> Civility </h2> 
+      <a href="http://civility.meteor.com/"><button>full site</button></a><br>
+        <p> It is designed to help roommates organize their household expenses </p>
+        <p> Through this project I was able to learn to manage multiple collections of 
+            data and their interactions. </p>
+        <p> This project really expanded my knowledge of JS, HTML, and CSS. Like most of my projects, it is a work-in-progress that continues to give me an outlet to learn from. </p>
+
+    </div>
+
+    <div class="colMain">
+      <iframe src="http://civility.meteor.com/" width="95%" height="380"> </iframe>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="colDetail">
+    <h2>Acatmore Tasks</h2>
+    <a href="http://acatmoretasks.meteor.com/"><button>full site</button></a><br>
+      <p>It is a simple task list that allows users to classify priority levels and dismiss completed tasks.</p>
       <p> After a week uncompleted tasks will expire.</p>
-      <p> Working with Meteor for the first time introduced me working with a server.</p>
+      <p> Meteor gave me my first experience working with a server and managing multiple views.</p>
     </div>
 
     <div class="colMain">
@@ -29,8 +70,9 @@
   <div class="row">
 
     <div class="colDetail">
-    <h2> Bloc Jams is a music player</h2>
-      <p>It allows users to view and play their music </p>
+    <h2> Bloc Jams</h2>
+    <a href="https://secure-lowlands-5349.herokuapp.com/"><button>full site</button></a><br>
+      <p>It is a music player that allows users to view and play their music </p>
       <p>This was the main project of the online bootcamp "Bloc". Through it I was able to learn some basic J-query and AngularJS</p>
     </div>
 
@@ -39,26 +81,4 @@
 
     </div>
   </div>
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
-
-
-<template name="navigation">
-  <header>
-        <h1>Alex Atmore </h1>
-        <p> Junior Front-end Web Developer and Designer</p>
-    <nav>
-      <ul>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="page2.html">About</a></li>
-        <li><a href="page3.html">Contact</a></li>
-<!--         <li><a href="page4.html">Page 4</a></li> -->
-      </ul>
-    </nav>
-  </header>
 </template>

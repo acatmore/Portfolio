@@ -1,7 +1,9 @@
 /* CSS declarations go here */
 body {
   margin: 0;
-  background: #000;
+/*  background-image: url("https://s3.amazonaws.com/civilityimages/solar-system-11188__340.jpg");*/
+  background-color: white;
+  color: white;
 }
 
 header {
@@ -13,7 +15,7 @@ header {
 
 header h1 {
   margin: 0;
-  display: inline;
+  display: block;
   float: right;
 }
 
@@ -35,15 +37,22 @@ nav ul li {
   padding: 5px 10px;
 }
 
-/*.container {
-  border-width: 1px;
-  
-}*/
+nav ul a {
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
 
 .row {
   clear: both;
   margin-bottom: 10px;
   margin-left: 10px;
+  background: white;
 }
 
 .row:after { 
@@ -53,14 +62,14 @@ nav ul li {
 }
 
 .colMain {
-  background: #333;
+  background: #0BFFC2;
   color: white;
   border-radius: 10px;
   padding: 2%;
   margin: 2%;
   float: right;
   width: 50%;
-  height: 400px;
+  height: 425px;
 }
 
 .colDetail {
@@ -68,6 +77,7 @@ nav ul li {
   color: black;
   border-radius: 10px;
   padding: 2%;
+  padding-color: #001a00;
   margin: 2%;
   float: left;
   width: 30%;
