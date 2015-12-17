@@ -1,7 +1,6 @@
 /* CSS declarations go here */
 body {
   margin: 0;
-/*  background-image: url("https://s3.amazonaws.com/civilityimages/solar-system-11188__340.jpg");*/
   background-color: white;
   color: white;
 }
@@ -15,18 +14,20 @@ header {
 
 header h1 {
   margin: 0;
-  display: block;
-  float: right;
+  display: inline;
 }
 
 header p {
   margin: 0;
-  display: inline;
-  float: right;
 }
+header div {
+  margin-left: 20px;
+}
+
 nav ul {
   margin: 0;
   display: inline;
+  float: right;
 }
 
 nav ul li {
@@ -41,8 +42,12 @@ nav ul a {
   color: white;
 }
 
+nav ul a:hover {
+  color: purple;
+}
+
 .container {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
   min-height: 100%;
   background: white;
@@ -68,8 +73,8 @@ nav ul a {
   padding: 2%;
   margin: 2%;
   float: right;
-  width: 50%;
-  height: 425px;
+  width: 60%;
+  height: 100%;
 }
 
 .colDetail {
