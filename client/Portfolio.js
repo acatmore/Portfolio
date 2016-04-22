@@ -21,17 +21,3 @@
 //     // code to run on server at startup
 //   });
 // }
-
-// UI.registerHelper("currentRouteName", function() {
-// 	return Router.current()?Router.current().route.getName():"";
-// });
-
-// MainController=RouteController.extend({
-// 	layoutTemplate:"mainLayout",
-// 	//yield navbar to region
-// 	yieldTemplates:{
-// 		"navbar":{
-// 			to:"navbar"
-// 		}
-// 	}
-// });
