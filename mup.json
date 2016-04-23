@@ -4,7 +4,7 @@
     {
       "host": "104.236.168.26",
       "username": "root",
-      //"password": "password"
+      //"password": "313baa6293c80312"
       // or pem file (ssh based authentication)
       "pem": "~/.ssh/id_rsa"
     }
@@ -17,7 +17,7 @@
   "setupNode": true,
 
   // WARNING: If nodeVersion omitted will setup 0.10.36 by default. Do not use v, only version number.
-  "nodeVersion": "0.10.40",
+  "nodeVersion": "0.10.41",
 
   // Install PhantomJS in the server
   "setupPhantom": false,
