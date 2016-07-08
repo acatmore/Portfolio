@@ -3,28 +3,52 @@
 
 @media only screen and (max-width: 768px) {
           /*  mobile*/
-  body {
-    background-image: none !important;
-    background-color: rgb(214, 151, 54);
-    background-attachment: none;
+  body { 
+    background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
   }
+
+  .static {     
+    width:100%;
+    z-index:3;
+    height:180px;
+    position: fixed; 
+    margin: 0px;
+    margin-top: -110px;
+    padding: 0px;
+    background-color: rgb(0,0,0,.5); 
+    background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  nav {
+    opacity: 1;
+  }
+
   header {
     background-image: none !important;
     background-color: rgb(51, 0, 102);
+    opacity: .6;
     width: 100%;
-    margin-top: -2.1%;
-    border-radius: 10px;
+    margin-top: -19%;
   }
   header h1 {
-    color: white;
-    margin-left: 25%;
+    color: rgb(214, 151, 54);
+    margin-top: 0;
+    margin-left: 33%;
   }
   header p {
-    color: white;
-    margin-left: 28.5%;
+    color: rgb(214, 151, 54);
+    margin-left: 38%;
   }
   header a {
     color: rgb(214, 151, 54);
+    text-decoration:none;
   }
   header ul {
     color: white;
@@ -34,15 +58,34 @@
     display: inline-block;
     margin-left: 5%;
   }
-  .staticFooter {
-    background-color: rgb(51,0,102);
-    background-image: none !important;
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    margin-bottom: -5%;
 
+  .mainView {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .row {
+    margin: 0px;
   }
       /* image resizes*/
+  .colDetail {
+      margin-left: 8%;
+      border-radius: 10px 10px 0px 0px;
+      margin-bottom: 0px;
+      margin-top: 10%;
+      width: 50%;
+      height: 50%;
+      background-color: rgb(252, 224, 159);
+      opacity: 0.7;
+      border-bottom: 2px solid;
+  }
+  .colDetail a {
+    text-decoration:none;
+  }
+
+  .colDetail #blocJamsText {
+    margin-top: 30%;
+  }
   .colMain #blocJamsImage {
       margin-left: 8%;
       width: 50%;
@@ -68,6 +111,29 @@
       width: 50%;
       height: 50%;
   }
+
+    .staticFooter {
+    background-color: rgb(51,0,102);
+    background-image: none !important;
+    width: 100%;
+    z-index:3;
+    margin-bottom: -5%;
+
+  }
+    .footerContainer ul {
+    display: inline-block;
+    list-style-type:none;
+    margin-left: 20%;
+    padding: 0;
+  }
+    .footerContainer li {
+      float: left;
+      display: inline;
+    }
+    .footerContainer a {
+      display: block;
+      padding: 8px;
+    }
 }
 @media only screen and (min-width: 1024px) {
           /* desktop*/
@@ -103,6 +169,8 @@
     background-position: center center;
   }
 
+  /////////* footer*//////////
+
   .staticFooter {
     width:100%;
     z-index:3;
@@ -122,9 +190,22 @@
     background-position: center center;
   }
 
-  .footerContainer {
-    padding-top: 50px;
+    .footerContainer ul {
+    display: inline;
+    list-style-type:none;
+    margin-left: 50%;
+
   }
+    .footerContainer li {
+      float: left;
+      display: inline;
+    }
+    .footerContainer a {
+      display: block;
+      padding: 0px;
+    }
+
+  ///////////////////////////////
 
   .mainView {
     position:relative;
