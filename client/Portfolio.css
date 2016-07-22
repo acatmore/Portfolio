@@ -175,7 +175,7 @@ body {
           /* desktop*/
   body {
     min-width: 1024px;
-    min-height: 768px;
+
 
   }
 
@@ -187,7 +187,7 @@ body {
   .static {     
     width:100%;
     z-index:3;
-    height:125px;
+    height:150px;
     position: fixed; 
     margin: 0px;
     padding: 0px;
@@ -207,13 +207,10 @@ body {
     position: fixed; 
     margin-top: -125px;
     bottom: 0px;
-    clear: both;
     padding: 0px;
     background: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg');
     background-color: rgb(51,0,102); 
-
     background: linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.6));
-   
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -234,14 +231,32 @@ body {
       padding: 0px;
     }
 
+  #footer ul li {
+    color: rgb(240,255,255);
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 5%;
+  }
+  #footer ul li h1 {
+    color: rgb(240,255,255);
+    font-size: 20px;
+    display: inline-block;
+  }
+  #footer ul a {
+    color: rgb(240,255,255);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+  #footer ul a:hover {
+    text-decoration: none;
+    color: rgb(51,0,102);
+  }
+
   ///////////////////////////////
 
-  .mainView {
-    position:relative;
-    padding-top: 125px;
-    z-index: 2;
-    overflow: hidden;
-  }
   header {
     background: rgb(0,0,0,1);
     opacity: 1;
@@ -299,34 +314,19 @@ body {
 
   }
 
-  #footer ul li {
-    color: rgb(240,255,255);
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 4%;
+  .mainView {
+    position:relative;
+    padding-top: 125px;
+    z-index: 2;
+    overflow: hidden;
   }
-  #footer ul li h1 {
-    color: rgb(240,255,255);
-    font-size: 20px;
-    display: inline-block;
+  .wrapper {
   }
-  #footer ul a {
-    color: rgb(240,255,255);
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 30px;
-  }
-
-  #footer ul a:hover {
-    text-decoration: none;
-    color: rgb(51,0,102);
-  }
-
   .row {
     clear: both;
     margin-bottom: 10px;
     margin-left: 10px;
+    margin-top: 60px;
     background: rgb(255, 165, 0, .5);
   }
 
@@ -349,15 +349,16 @@ body {
   }
 
   .colDetail {
-    background: rgb(255,255,255,.4);
+    background-color: rgb(252,224,159);
     color: black;
     border-radius: 10px;
     padding: 2%;
     padding-color: #001a00;
     margin: 2%;
+    margin-top: 5%;
     float: left;
     width: 30%;
-    height: 400px;
+    height: 20%;
   }
 
   .colDetail h1 {
@@ -367,7 +368,7 @@ body {
   }
 
   .colDetail p {
-    color: rgb(240,255,255);
+    color: rgb(28,20,19);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
   }
