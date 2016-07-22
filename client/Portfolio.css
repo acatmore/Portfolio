@@ -1,69 +1,46 @@
-/* CSS RESET */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/*APP CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0,0,0,1);
+  background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*APP CSS*/
 
 @media only screen and (max-width: 768px) {
-/*  mobile*/
+/*  mobile and ipad screens*/
   .static {     
     width:100%;
     z-index:3;
-    height:200px;
+    height:115px;
     position: fixed; 
     margin: 0px;
-    padding: 0px;
+    margin-top: -10%;
+    padding: none;
     background-color: rgb(0,0,0,.5); 
     background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg'); 
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+  }
+
+  .headerOverLay {
+    width: 100%;
+    heigt: 100%;
   }
   nav {
     opacity: 1;
@@ -98,7 +75,7 @@ table {
     margin-left: 5%;
   }
 
-    body { 
+  body { 
     margin: 0;
     text-align: center;
     background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg');
@@ -189,13 +166,6 @@ table {
 @media only screen and (min-width: 1024px) {
           /* desktop*/
   body {
-    background-color: rgb(0,0,0,1);
-    background-image: url('https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 1;
     min-width: 1024px;
     min-height: 768px;
 
