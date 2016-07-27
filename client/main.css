@@ -2,9 +2,11 @@
 
 header {
 	postion: relative;
+	max-width: 100%;
+	height: 500px;
 	background-color: #263d36;
-	background-image: linear-gradient(rgba(102,102,102,0.5),rgba(0,0,0,0.5)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
-	background-position: center top;
+	background-image: linear-gradient(rgba(250,219,235,0.3),rgba(93,15,56,0.8)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	line-height: 1.2;
@@ -13,47 +15,56 @@ header {
 
 }
 
-.headerOverLay 
-	position: absolute;
-	background-color: rgba(75, 56, 238, 0.9);
-	top: 0:
-	left: 0;
-	width: 100%;
-	height: 100%;
+.name {
+	margin-top: 200px;
 }
 
-ul li {
+header ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: inline-block;
+}
+
+.social {
+	float: right;
+	display: inline;
+}
+
+header li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 header h1 {
 	color: white;
 	font-size: 3em;
-	font-weight: 350;
+	font-weight: 30;
 }
 
 header h2 {
-	color 
+	color: rgb(225, 14, 126);
 }
 
 header a {
-	/*border: 1px solid #e81c4f;
-	border-radius: 290486px; */
-	/*color: #ed1557;*/
-	color: rgba(249,249,249);
+	color: rgb(225, 14, 126);
 	font-size: 1em;
 	letter-spacing: .2em;
-	padding: 1em 2em;
+	padding-top: 10px;
+	margin: 0;
 	text-transform: uppercase;
 	text-decoration: none;
-	/*transition: none 200ms ease-out;
-	transition-property: color, background; */
 }
 
-/*header a:hover {
-	background: #e81c4f;
+header a:hover {
+	background: rgb(225, 14, 126);
+	border-radius: 10px;
+	border-left: 2px;
 	color: white;
-}*/
+}
 
 body {
 	display: block;
@@ -92,5 +103,5 @@ pre {
 }
 
 a {
-	color: #ed1557;
+	color: white;
 }
