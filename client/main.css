@@ -106,20 +106,46 @@ h2 {
 a {
 	color: white;
 }
-i {
-	height: 50px;
-	width: 50px;
+
+.wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .row {
+}
+
+.colDetail {
 	margin-top: 50px;
+	margin-left: 20%;
+}
+
+.colDetail a {
+	color: rgb(225, 14, 126);
+	font-family: "Roboto", "Helvetica", "Ariel", sans-serif;
+	text-decoration: none;
+}
+
+.colDetail a:hover {
+	background: rgb(225, 14, 126);
+	border-radius: 5px;
+	color: white;
+}
+
+ i {
+ 	font-size: 4em;
+ }
+
+.colMain {
+	height: 300px;
+	width: 45%;
+	float: right;
+	margin: 25px;
 }
 
 .portfolio-img {
 	height: 300px;
-	width: 45%;
-	display: block;
+	width: 100%;
 	float: right;
-	margin: 50px;
 }
 
 
