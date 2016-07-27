@@ -1,14 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 header {
+	postion: relative;
 	background-color: #263d36;
-	background-image: url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
+	background-image: linear-gradient(rgba(102,102,102,0.5),rgba(0,0,0,0.5)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	line-height: 1.2;
-	padding: 10px 2px;
+	padding: 5px 2em;
 	text-align: center;
+
+}
+
+.headerOverLay 
+	position: absolute;
+	background-color: rgba(75, 56, 238, 0.9);
+	top: 0:
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 ul li {
@@ -17,15 +28,20 @@ ul li {
 
 header h1 {
 	color: white;
-	font-size: 2.5em;
-	font-weight: 300;
+	font-size: 3em;
+	font-weight: 350;
+}
+
+header h2 {
+	color 
 }
 
 header a {
 	/*border: 1px solid #e81c4f;
 	border-radius: 290486px; */
-	color: white;
-	font-size: .6em;
+	/*color: #ed1557;*/
+	color: rgba(249,249,249);
+	font-size: 1em;
 	letter-spacing: .2em;
 	padding: 1em 2em;
 	text-transform: uppercase;
@@ -76,5 +92,5 @@ pre {
 }
 
 a {
-	color: #e81c4f;
+	color: #ed1557;
 }
