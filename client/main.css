@@ -1,11 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+html {
+	background-color: rgb(252, 248, 231);
+}
+
 header {
 	postion: relative;
 	max-width: 100%;
 	height: 500px;
 	background-color: #263d36;
-	background-image: linear-gradient(rgba(250,219,235,0.3),rgba(93,15,56,0.8)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
+	background-image: linear-gradient(rgba(25,25,25,0.4),rgba(93,15,56,0.5)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/road-sunset.jpeg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,12 +23,11 @@ header {
 	margin-top: 200px;
 }
 
-header ul {
+.pages {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	float: left;
-	display: inline-block;
 }
 
 .social {
@@ -32,11 +35,28 @@ header ul {
 	display: inline;
 }
 
+.social li {
+	border-radius: 175px;
+	padding: 6px;
+	margin-left: 4px;
+
+}
+
+.social li:hover {
+	background: rgb(225, 14, 126);
+}
+
+.invert {
+	-webkit-filter: invert(100%); filter: invert(100%);
+}
+
 header li {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	text-align: center;
+	display: inline;
+	float: left;
 }
 
 header h1 {
@@ -50,20 +70,24 @@ header h2 {
 }
 
 header a {
-	color: rgb(225, 14, 126);
+	color: white;
+	display: block;
 	font-size: 1em;
 	letter-spacing: .2em;
-	padding-top: 10px;
 	margin: 0;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 header a:hover {
-	background: rgb(225, 14, 126);
-	border-radius: 10px;
 	border-left: 2px;
+	color:rgb(225, 14, 126);
+}
+
+header img {
 	color: white;
+	height: 16px;
+	width: 16px;
 }
 
 body {
@@ -71,7 +95,7 @@ body {
 	margin: 8px;
 	max-width: 5000px;
 	font-family: "Roboto", "Helvetica", "Ariel", sans-serif;
-	color: #566b78;
+	color: rgb(252, 248, 231);
 }
 
 h2 {
@@ -79,29 +103,23 @@ h2 {
 	padding-top: 5px;
 }
 
-h1,
-h2,
-strong {
-	color: #333;
-}
-
-code,
-pre {
-	background: #f5f7f9;
-	border-bottom: 1px solid #d8dee9;
-	color: #a7adba;
-}
-
-code {
-	padding: 2px 4px;
-	vertical-align: text-bottom;
-}
-
-pre {
-	padding: 2px;
-	border-left: 2px solid #69c;
-}
-
 a {
 	color: white;
 }
+i {
+	height: 50px;
+	width: 50px;
+}
+.row {
+	margin-top: 50px;
+}
+
+.portfolio-img {
+	height: 300px;
+	width: 45%;
+	display: block;
+	float: right;
+	margin: 50px;
+}
+
+
