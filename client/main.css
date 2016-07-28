@@ -19,6 +19,16 @@ header {
 
 }
 
+.profile {
+	border-radius: 50%;
+	height: auto;
+	width: 120px;
+	float: right;
+	margin-top: 10px;
+	margin-left: 15px;
+	border: solid 2px rgb(225, 14, 126);
+}
+
 .name {
 	margin-top: 200px;
 }
@@ -39,6 +49,7 @@ header {
 	border-radius: 175px;
 	padding: 6px;
 	margin-left: 4px;
+
 
 }
 
@@ -132,7 +143,7 @@ a {
 }
 
  i {
- 	font-size: 4em;
+ 	font-size: 5em;
  }
 
 .colMain {
