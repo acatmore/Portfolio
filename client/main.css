@@ -119,8 +119,9 @@ a {
 }
 
 .wrapper {
-	margin-left: 10%;
+	margin-left: 20%;
 	margin-right: 10%;
+	margin-top: 100px;
 }
 .row {
 
@@ -152,8 +153,9 @@ a {
 
 .portfolio-img {
 	height: auto;
-	width: 100%;
+	width: 60%;
 	margin: 25px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 
