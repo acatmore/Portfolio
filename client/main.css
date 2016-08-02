@@ -197,6 +197,18 @@ header img {
 	height: 16px;
 	width: 16px;
 }
+.prev-button {
+	margin-top: 10%;
+	float: left;
+	height: 24px;
+	width: 24px;
+}
+.next-button {
+	margin-top: 10%;
+	float: right;
+	height: 24px;
+	width: 24px;
+}
 
 body {
 	display: block;
@@ -225,6 +237,10 @@ a {
 
 .colDetail {
 margin-left: 40%;
+}
+
+.colDetail span {
+float: left;
 }
 
 .colDetail a {
