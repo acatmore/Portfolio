@@ -2,7 +2,19 @@
     <header>
         <ul class="pages" style="list-style-type: none;">
             <li><h4><a href="mailto:acatmore.com">About</a></h4></li>
-            <li><h4><a href="{{pathFor route='portfolio'}}">Portfolio</a></h4></li>
+            <li>
+                
+                <div class="dropdown">
+                    <h4>Portfolio</h4>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><h4><a href="{{pathFor route='blocJams'}}">Bloc Jams</a></h4></li>
+                            <li><h4><a href="{{pathFor route='railvolution'}}">Railvoltion</a></h4></li>
+                            <li><h4><a href="{{pathFor route='fourwalla'}}">Fourwalla</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
             <li><h4><a href="mailto:acatmore.com">Contact</a></h4></li>
         </ul>
 
