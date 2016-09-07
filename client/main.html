@@ -14,15 +14,12 @@
 </head>
 
 <template name="layout">
-{{> navigation}}
+	<div id="header">
+		{{> yield "header"}}
+	</div>
 
-<!-- {{> portfolio}} -->
+	<div id="main">
+		{{> yield "mainContent"}}
+	</div>
 
-<!-- {{> footer}} -->
-</template>
-
-<template name="layout2">
-{{> navigation}}
-
-{{> portfolio}}
 </template>
