@@ -14,12 +14,9 @@
 </head>
 
 <template name="layout">
-	<div id="header">
-		{{> yield "header"}}
-	</div>
 
-	<div id="main">
-		{{> yield "mainContent"}}
-	</div>
+	{{> Template.dynamic template=top}}
+	<br>
+	{{> Template.dynamic template=main}}
 
 </template>

@@ -127,11 +127,11 @@ html {
 	border: solid 2px rgb(225, 14, 126);
 }
 
-#main {
+.myName {
 	margin-top: 200px;
 }
 
-#main h2 {
+.myName h2 {
 	color: rgb(225, 14, 126);
 }
 
