@@ -160,6 +160,10 @@ html {
 	-webkit-filter: invert(100%); filter: invert(100%);
 }
 
+.page-home .home {
+  display: none;
+}
+
 header li {
 	list-style-type: none;
 	margin: 0;
@@ -272,8 +276,8 @@ margin-left: 40%;
 
 .portfolio-img {
 	height: auto;
-	width: 60%;
-	opacity: 0.85;
+	width: 50%;
+	opacity: 0.7;
 	margin-left: 22%;
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
 }

@@ -17,6 +17,7 @@
 
 	{{> Template.dynamic template=top}}
 	<br>
-	{{> Template.dynamic template=main}}
-
+	{{#transition in="flipInX" out="zoomOutUp"}}
+		{{> Template.dynamic template=main}}
+  	{{/transition}}
 </template>
