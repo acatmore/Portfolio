@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "granim": "^1.0.31",
     "meteor-node-stubs": "~0.2.0"
   }
 }
