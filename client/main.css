@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+/*  media queries for different screen sizes */
 @media (max-width: 600px) {
 	body {
 		postion: relative;
@@ -123,9 +124,10 @@ html {
 	width: 120px;
 	float: center;
 	margin-top: 10px;
-	/*margin-right: 100px;  for small media screens*/
 	border: solid 2px rgb(225, 14, 126);
 }
+
+/* navigation */
 
 .myName {
 	margin-top: 300px;
@@ -144,8 +146,9 @@ html {
 
 .social {
 	float: right;
-	display: inline;
-	margin-top: 150px;
+	position: relative;
+	display: inline-block;
+
 }
 
 .social li {
@@ -164,14 +167,15 @@ html {
 .page-home .home {
   display: none;
 }
+
 header ul {
-	list-style: none;
-	list-style-position: outside;
+	list-style-type: none;
 }
 
 header li {
 	list-style-type: none;
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
 	text-align: center;
 	display: inline;
 	float: left;
@@ -180,7 +184,12 @@ header li {
 header h1 {
 	color: rgb(230, 255, 255);
 	font-size: 3em;
-	font-weight: 30;
+	font-weight: 30em;
+}
+
+header h4 {
+	margin: 0px;
+	padding: 0px;
 }
 
 header h2 {
@@ -192,7 +201,6 @@ header a {
 	display: block;
 	font-size: 1em;
 	letter-spacing: .2em;
-	margin: 0px;
 	padding: 2em;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -219,6 +227,7 @@ header img {
 	background-color: rgba(51, 204, 255, 0.6);
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
 	margin: 0px;
+	padding: 0px;
 
 }
 
@@ -227,6 +236,7 @@ header img {
 	z-index: 3;
 }
 
+/* main content */
 
 body {
 	display: block;
