@@ -122,21 +122,12 @@ html {
 	background-color: rgb(0, 94, 128);
 }
 
-.profile {
-	border-radius: 50%;
-	height: auto;
-	width: 120px;
-	float: center;
-	margin-top: 10px;
-	border: solid 2px rgb(225, 14, 126);
-}
-
 /* navigation */
 
 .myName {
 	position: absolute;
 	top: 0;
-	right: 10px;
+	right: 20px;
 	text-align: right;
 }
 
@@ -148,6 +139,22 @@ html {
 .myName h2 {
 	color: white;
 	font-size: 1.5em;
+}
+.myName a {
+	color: rgb(225, 14, 126); 
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.about .myName a {
+	color: rgb(225, 14, 126);
+	font-size: 1em;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 
 .pages {
@@ -162,7 +169,11 @@ html {
 }
 
 .page-home .myName {
-  display: none;
+  	display: none;
+  	position: absolute;
+	top: 0;
+	right: 20px;
+	text-align: right;
 }
 
 header {
@@ -260,11 +271,11 @@ a {
 .wrapper {
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-top: 100px;
+	margin-top: 10%;
 }
 
 .colDetail {
-margin-left: -8%;
+margin-left: 0;
 }
 
 .colDetail a {
@@ -287,11 +298,27 @@ margin-left: -8%;
 
 }
 
+.profile {
+	position: absolute;
+	border-radius: 50%;
+	height: auto;
+	width: 150px;
+	margin-right: 100%;
+	margin-top: 15%;
+	border: solid 2px rgb(225, 14, 126);
+}
+
+.img-container {
+	width: 100%;
+	position: relative;
+
+}
+
 .portfolio-img {
 	height: auto;
 	width: 50%;
 	opacity: 0.7;
-	margin-left: 22%;
+	margin-left: 25%;
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
 }
 
@@ -300,7 +327,7 @@ margin-left: -8%;
 .footer {
 	position: absolute;
 	bottom: 0;
-	right: 10px;
+	right: 20px;
 	text-align: right;
 }
 
