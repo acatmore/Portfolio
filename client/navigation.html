@@ -1,17 +1,18 @@
 <template name="navigation">
         <ul class="pages">
-            <li><h4><a href="/about">About</a></h4></li>
-            <li>
+            <li class="header-link"><h4><a href="/about">About</a></h4></li>
+            <li class="header-link">
                 <div class="dropdown">
                     <h4><a>Portfolio</a></h4>
                     <div class="dropdown-content">
-                        <h4><a href="/portfolio/blocJams" class="project">Bloc Jams</a></h4>
-                        <h4><a href="/portfolio/railvolution" class="project">Railvoltion</a></h4>
-                        <h4><a href="/portfolio/fourwalla" class="project">Fourwalla</a></h4>
+                        <h4><a href="/portfolio/blocJams">Bloc Jams</a></h4>
+                        <h4><a href="/portfolio/railvolution">Railvoltion</a></h4>
+                        <h4><a href="/portfolio/fourwalla">Fourwalla</a></h4>
                     </div>
                 </div>
             </li>
-            <li><h4><a href="/contact">Contact</a></h4></li>
+            <li class="header-link"><h4><a href="mailto:acatmore.com" class="header-link">Contact</a></h4></li>
+<!--             <a href="/contact">Contact</a> -->
             <li>
                 <div class="page-{{currentRouteName}}">
                     {{> myName}}

@@ -143,10 +143,12 @@ html {
 /* navigation */
 
 .myName {
-	position: absolute;
+	display: inline;
+	height: 50%;
+	width: 300px;
+	position: relative;
 	top: 0;
 	right: 20px;
-	text-align: right;
 }
 
 .myName h1 {
@@ -161,21 +163,13 @@ html {
 .myName a {
 	color: rgb(225, 14, 126); 
 	font-size: 1em;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-}
-
-.about .myName a {
-	color: rgb(225, 14, 126);
-	font-size: 1em;
-	letter-spacing: 0;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	text-decoration: none;
 }
 
 .pages {
+	width: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -187,11 +181,7 @@ html {
 }
 
 .page-home .myName {
-  	display: none;
-  	position: absolute;
-	top: 0;
-	right: 20px;
-	text-align: right;
+	display: none;
 }
 
 header {
@@ -230,7 +220,7 @@ header h2 {
 	color: rgb(225, 14, 126);
 }
 
-header a {
+.header-link a {
 	color: rgb(225, 14, 126);
 	display: block;
 	font-size: 1em;
@@ -238,6 +228,10 @@ header a {
 	padding: 2em;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+header .myName {
+	position: absolute;
 }
 
 header a:hover {
@@ -380,6 +374,10 @@ footer {
 	align-content: flex-end;
 	position: relative;
 
+}
+
+.page-contact .social {
+	margin-top: 500px;
 }
 
 .social-button {
