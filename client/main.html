@@ -14,11 +14,19 @@
 </head>
 
 <template name="layout">
-
-	{{> Template.dynamic template=top}}
-	<br>
-	{{#transition in="flipInX" out="zoomOutUp"}}
-		{{> Template.dynamic template=main}}
-  	{{/transition}}
-  	{{> Template.dynamic template=footer}}
+	<div class="ui-view">
+		<header>
+			{{> Template.dynamic template=top}}
+		</header>
+		<br>
+		<div class="content">
+			{{#transition in="flipInX" out="zoomOutUp"}}
+				{{> Template.dynamic template=main}}
+	  		{{/transition}}
+	  	</div>
+	  	<br>
+	  	<footer>
+	  	{{> Template.dynamic template=footer}}
+	  	</footer>
+	</div>
 </template>

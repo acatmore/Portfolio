@@ -122,6 +122,24 @@ html {
 	background-color: rgb(0, 94, 128);
 }
 
+.ui-view {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
+	word-break: normal;
+	position: relative;
+
+}
+
 /* navigation */
 
 .myName {
@@ -177,8 +195,11 @@ html {
 }
 
 header {
+	top: 0;
+	left: 0;
 	position: relative;
 	width: 100%;
+	flex-shrink: 0;
 }
 
 header ul {
@@ -251,6 +272,12 @@ header img {
 
 /* main content */
 
+.content {
+	margin: 0;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
 body {
 	display: block;
 	max-width: 5000px;
@@ -268,12 +295,12 @@ a {
 	color: white;
 }
 
-.wrapper {
+/* .wrapper {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
 }
-
+*/
 .colDetail {
 margin-left: 0;
 }
@@ -298,13 +325,20 @@ margin-left: 0;
 
 }
 
+.about {
+	background-color: rgb(17, 25, 38, .3);
+	top: 50%;
+	left: 50%;
+}
+.about-content {
+	position: relative;
+}
+
 .profile {
 	position: absolute;
 	border-radius: 50%;
 	height: auto;
 	width: 150px;
-	margin-right: 100%;
-	margin-top: 15%;
 	border: solid 2px rgb(225, 14, 126);
 }
 
@@ -324,24 +358,49 @@ margin-left: 0;
 
 /* foooter */
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	right: 20px;
+footer {
+	height: 50px;
+	padding-bottom: 10px;
+	align-self: flex-end;
+	flex-shrink: 0;
 	text-align: right;
+	position: relative;
 }
 
-.social {
-	position: relative;
-	display: inline-block;
 
+.social {
+	display: block;
+	width: 100%;
+	margin-right: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+	position: relative;
+
+}
+
+.social-button {
+	margin: 10px;
+}
+
+.social a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
 
 .social div {
+	list-style-type: none;
 	text-decoration: none;
 	border-radius: 175px;
 	padding: 7px;
 	margin: 0px;
+	overflow: hidden;
 }
 
 .social div:hover {
