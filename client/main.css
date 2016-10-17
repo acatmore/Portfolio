@@ -3,7 +3,7 @@
 /*  media queries for different screen sizes */
 @media (max-width: 600px) {
 
-	/* replace myName with simple home nav button */
+	//need to fix the background-image height for small screen sizes
 	body {
 		postion: relative;
 		max-width: 100%;
@@ -33,7 +33,12 @@
 
 @media (max-width: 915px) {
 
-	/* replace myName with simple home nav button */
+	//need to fix the background-image height for small screen sizes
+
+	.page-home .myName {
+	margin-top: 200px;
+	margin-right: 25%;
+}
 	body {
 		postion: relative;
 		max-width: 100%;
@@ -60,7 +65,11 @@
 	}
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 916px) {
+	.page-home .myName {
+	margin-top: 200px;
+	margin-right: 31%;
+}
 	body {
 		postion: relative;
 		max-width: 100%;
@@ -90,6 +99,10 @@
 }
 
 @media (min-width: 1921px) {
+	.page-home .myName {
+	margin-top: 200px;
+	margin-right: 31%;
+}
 	body {
 		postion: relative;
 		max-width: 100%;
@@ -144,7 +157,7 @@ html {
 
 .myName {
 	display: inline;
-	height: 50%;
+	height: 100px;
 	width: 300px;
 	position: relative;
 	top: 0;
@@ -178,10 +191,6 @@ html {
 
 .invert {
 	-webkit-filter: invert(100%); filter: invert(100%);
-}
-
-.page-home .myName {
-	display: none;
 }
 
 header {
