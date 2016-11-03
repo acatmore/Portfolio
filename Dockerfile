@@ -1,5 +1,5 @@
 
-FROM node:0.10
+FROM node:4
 
 ADD build /app
 
