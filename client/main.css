@@ -161,7 +161,6 @@ html {
 	width: 300px;
 	position: relative;
 	top: 0;
-	right: 20px;
 }
 
 .myName h1 {
@@ -261,8 +260,9 @@ header img {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: rgba(51, 204, 255, 0.6);
-	box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	border: solid 1px black;
+	background-color: rgba(48,161,199, 0.9);
 	margin: 0px;
 	padding: 0px;
 
@@ -285,7 +285,7 @@ body {
 	display: block;
 	max-width: 5000px;
 	font-family: "Roboto", "Helvetica", "Ariel", sans-serif;
-	color: rgb(252, 248, 231);
+	color: white;
 }
 
 
@@ -329,20 +329,38 @@ margin-left: 0;
 }
 
 .about {
-	background-color: rgb(17, 25, 38, .3);
-	top: 50%;
-	left: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 .about-content {
 	position: relative;
+	flex-direction: column;
+	margin-top: 5%;
+	flex-grow: 1;
+	max-width: 50%;
+	border-radius: 10px;
+	background: rgba(48,161,199,0.8);
+
+}
+
+.about-content h2 {
+	color: 
+}
+
+.about-content p {
+	max-width: 70%;
+	margin-left: 15%;
 }
 
 .profile {
-	position: absolute;
+	position: relative;
+	flex-grow: 0;
 	border-radius: 50%;
 	height: auto;
 	width: 150px;
-	border: solid 2px rgb(225, 14, 126);
+	border: solid 4px rgb(225, 14, 126);
 }
 
 .img-container {
