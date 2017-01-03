@@ -16,11 +16,28 @@
 		padding: 5px 2em;
 		text-align: center;
 	}
+	header {
+		margin-left: -15%;
+	}
+
+	.page-home {
+
+	}
+
+	.page-home .myName {
+	margin-right: 20%;
+	position: absolute;
+}
+	footer {
+		align-self: center;
+		margin-right: 35%;
+
+	}
 		#image-s{
-			display: block;
+			display: none;
 		}
 		#image-m{
-			display: none;
+			display: block;
 		}
 		#image-l{
 			display: none;
@@ -36,15 +53,17 @@
 	//need to fix the background-image height for small screen sizes
 
 	.page-home .myName {
-	margin-top: 200px;
-	margin-right: 25%;
+	margin-top: 20%;
+	margin-right: 31%;
+	position: absolute;
 }
 	body {
 		postion: relative;
 		max-width: 100%;
-		height: 500px;
+		heiht: 500px;
 		background-color: #263d36;
-		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		background-position: center center;
+		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		
+		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		line-height: 1.2;
@@ -55,10 +74,10 @@
 		display: none;
 	}
 	#image-m{
-		display: block;
+		display: none;
 	}
 	#image-l{
-		display: none;
+		display: block;
 	}
 	#image-origin{
 		display: none;
@@ -67,13 +86,14 @@
 
 @media (min-width: 916px) {
 	.page-home .myName {
-	margin-top: 200px;
+	margin-top: 20%;
 	margin-right: 31%;
+	position: absolute;
 }
 	body {
 		postion: relative;
 		max-width: 100%;
-		height: 850px;
+		height: 500px;
 		background-color: #263d36;
 		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");
 		background-position: center center;
@@ -158,9 +178,10 @@ html {
 .myName {
 	display: inline;
 	height: 100px;
-	width: 300px;
+	width: 200px;
 	position: relative;
 	top: 0;
+	right: 3%;
 }
 
 .myName h1 {
@@ -233,12 +254,14 @@ header h2 {
 	display: block;
 	font-size: 1em;
 	letter-spacing: .2em;
-	padding: 2em;
+	padding: 1em;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 header .myName {
+	margin-top: 20%;
+	margin-right: 31%;
 	position: absolute;
 }
 
@@ -261,8 +284,7 @@ header img {
 	display: none;
 	position: absolute;
 	border-radius: 10px;
-	border: solid 1px black;
-	background-color: rgba(48,161,199, 0.9);
+	background-color: rgba(94, 217, 255, 0.9);
 	margin: 0px;
 	padding: 0px;
 
@@ -371,9 +393,8 @@ margin-left: 0;
 
 .portfolio-img {
 	height: auto;
-	width: 50%;
+	width: 100%;
 	opacity: 0.7;
-	margin-left: 25%;
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
 }
 
@@ -396,9 +417,9 @@ footer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: flex-end;
-	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 	position: relative;
 
 }
@@ -415,15 +436,15 @@ footer {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 30%;
     text-decoration: none;
 }
 
 .social div {
 	list-style-type: none;
 	text-decoration: none;
-	border-radius: 175px;
-	padding: 7px;
+	border-radius: 50px;
+	padding: 10px;
 	margin: 0px;
 	overflow: hidden;
 }
