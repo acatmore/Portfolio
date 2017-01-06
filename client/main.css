@@ -1,157 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
-/*  media queries for different screen sizes */
-@media (max-width: 600px) {
-
-	//need to fix the background-image height for small screen sizes
-	body {
-		postion: relative;
-		max-width: 100%;
-		height: 500px;
-		background-color: #263d36;
-		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		line-height: 1.2;
-		padding: 5px 2em;
-		text-align: center;
-	}
-	header {
-		margin-left: -15%;
-		border-bottom: none;
-	}
-
-	.page-home {
-
-	}
-
-	.page-home .myName {
-	margin-right: 20%;
-	position: absolute;
-}
-	footer {
-		align-self: center;
-		margin-right: 35%;
-
-	}
-		#image-s{
-			display: none;
-		}
-		#image-m{
-			display: block;
-		}
-		#image-l{
-			display: none;
-		}
-		#image-origin{
-			display: none;
-		}
-
-}
-
-@media (max-width: 915px) {
-
-	//need to fix the background-image height for small screen sizes
-
-	.page-home .myName {
-	margin-top: 20%;
-	margin-right: 31%;
-	position: absolute;
-}
-	body {
-		postion: relative;
-		max-width: 100%;
-		heiht: 100%;
-		background-color: #263d36;
-		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		line-height: 1.2;
-		padding: 5px 2em;
-		text-align: center;
-	}
-	#image-s{
-		display: none;
-	}
-	#image-m{
-		display: none;
-	}
-	#image-l{
-		display: block;
-	}
-	#image-origin{
-		display: none;
-	}
-}
-
-@media (min-width: 916px) {
-	.page-home .myName {
-	margin-top: 20%;
-	margin-right: 31%;
-	position: absolute;
-}
-	body {
-		postion: relative;
-		max-width: 100%;
-		height: 100%;
-		background-color: #263d36;
-		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		line-height: 1.2;
-		padding: 5px 2em;
-		text-align: center;
-
-	}
-	#image-s{
-		display: none;
-	}
-	#image-m{
-		display: none;
-	}
-	#image-l{
-		display: block;
-	}
-	#image-origin{
-		display: none;
-	}
-}
-
-@media (min-width: 1921px) {
-	.page-home .myName {
-	margin-top: 200px;
-	margin-right: 31%;
-}
-	body {
-		postion: relative;
-		max-width: 100%;
-		height: 100%;
-		background-color: #263d36;
-		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		line-height: 1.2;
-		padding: 5px 2em;
-		text-align: center;
-
-	}
-	#image-s{
-		display: none;
-	}
-	#image-m{
-		display: none;
-	}
-	#image-l{
-		display: none;
-	}
-	#image-origin{
-		display: block;
-	}
-}
-
 html {
 	background-color: rgb(0, 94, 128);
 }
@@ -162,7 +9,6 @@ html {
 	min-height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -50px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -173,16 +19,22 @@ html {
 	position: relative;
 
 }
-
 /* navigation */
 
 .myName {
+	height: 100%;
+	width: 100%;
 	display: inline;
+	position: relative;
+	top: 300px;
+	right: -35%;
+
+}
+
+.name-container {
+	position: relative;
 	height: 100px;
 	width: 200px;
-	position: relative;
-	top: 0;
-	right: 3%;
 }
 
 .myName h1 {
@@ -210,6 +62,11 @@ html {
 	float: left;
 }
 
+// needs to go to header one different views
+// nav bar needs to turn to drop down at <675px
+.page-home .myName{
+
+}
 .invert {
 	-webkit-filter: invert(100%); filter: invert(100%);
 }
@@ -262,9 +119,14 @@ header h2 {
 }
 
 header .myName {
-	margin-top: 20%;
-	margin-right: 31%;
+	margin-top: -5px;
+	margin-right: -40px;
+	letter-spacing: .2em;
 	position: absolute;
+	color: rgb(225, 14, 126);
+	font-size: .53em;
+	padding: 1em;
+	text-transform: uppercase;
 }
 
 header a:hover {
@@ -286,7 +148,8 @@ header img {
 	display: none;
 	position: absolute;
 	border-radius: 10px;
-	background-color: rgba(94, 217, 255, 0.9);
+	background-color: rgba(94, 217, 255, 0.3);
+	border: 2px solid rgb(94, 217, 255);
 	margin: 0px;
 	padding: 0px;
 
@@ -301,7 +164,7 @@ header img {
 
 .content {
 	margin: 0;
-	margin-top: -5%;
+	margin-top: 3%;
 	flex-shrink: 0;
 	flex-grow: 1;
 }
@@ -309,6 +172,7 @@ header img {
 body {
 	display: block;
 	max-width: 5000px;
+	max-height: 4000px;
 	font-family: "Roboto", "Helvetica", "Ariel", sans-serif;
 	color: white;
 }
@@ -349,9 +213,7 @@ margin-left: 0;
  	font-size: 4em;
  }
 
-.colMain {
 
-}
 
 .about {
 	display: flex;
@@ -366,9 +228,9 @@ margin-left: 0;
 	flex-grow: 1;
 	max-width: 70%;
 	border-radius: 10px;
-	background: rgba(66, 167, 204, .7);
-	border-left: 5px linear-gradient rgba(255,255,255, .8), rgba(255,255,255, .1);
-	border-right: 5px solid rgba(255,255,255, .8);
+	background: rgba(54, 145, 173, 0.6);
+	border-left: 2px solid rgb(94, 217, 255);
+	border-right: 2px solid rgb(94, 217, 255);
 
 
 }
@@ -402,7 +264,7 @@ margin-left: 0;
 .portfolio-img {
 	height: auto;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.9;
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
 }
 
@@ -458,6 +320,158 @@ footer {
 }
 
 .social div:hover {
-	background: rgb(225, 14, 126);
+	background: rgba(94, 217, 255, 0.3);
+	border: 2px solid rgb(94, 217, 255);
 }
+
+/*  media queries for different screen sizes */
+@media (max-width: 600px) {
+
+	//need to fix the background-image height for small screen sizes
+	body {
+		postion: relative;
+		max-width: 100%;
+		height: auto;
+		background-color: #263d36;
+		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.2;
+		text-align: center;
+	}
+	header {
+	}
+	footer {
+		align-self: center;
+		left: 0%;
+
+	}
+		#image-s{
+			display: none;
+		}
+		#image-m{
+			display: block;
+		}
+		#image-l{
+			display: none;
+		}
+		#image-origin{
+			display: none;
+		}
+
+		.myName {
+			right: -27%;
+		}
+
+}
+// header break to nav dropdown
+
+@media (max-width: 675px) {
+
+
+
+}
+
+@media (max-width: 915px) {
+
+	//need to fix the background-image height for small screen sizes
+
+	 .myName {
+	 	right: -20%;
+	}
+	body {
+		postion: relative;
+		max-width: 100%;
+		heiht: 100%;
+		background-color: #263d36;
+		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");		
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.2;
+		text-align: center;
+	}
+	#image-s{
+		display: none;
+	}
+	#image-m{
+		display: none;
+	}
+	#image-l{
+		display: block;
+	}
+	#image-origin{
+		display: none;
+	}
+}
+
+@media (min-width: 916px) {
+	.page-home .myName {
+		right: -40%;
+}
+	body {
+		postion: relative;
+		max-width: 100%;
+		height: 703px;
+		background-color: #263d36;
+		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.2;
+		text-align: center;
+
+	}
+	#image-s{
+		display: none;
+	}
+	#image-m{
+		display: none;
+	}
+	#image-l{
+		display: block;
+	}
+	#image-origin{
+		display: none;
+	}
+}
+
+.colMain {
+	height: 450px;
+	width: 800px;
+}
+
+@media (min-width: 1921px) {
+	.page-home .myName {
+
+}
+	body {
+		postion: relative;
+		max-width: 100%;
+		height: 100%;
+		background-color: #263d36;
+		background-image: linear-gradient(rgba(204, 255, 255, 0.1),rgba(51, 204, 255, 0.6)),url("https://s3-us-west-2.amazonaws.com/acatmoreimages/background/pexels-photo.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.2;
+		text-align: center;
+
+	}
+	#image-s{
+		display: none;
+	}
+	#image-m{
+		display: none;
+	}
+	#image-l{
+		display: none;
+	}
+	#image-origin{
+		display: block;
+	}
+}
+
+
+
 
